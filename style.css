@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    font-family: 'Clash Grotesk', sans-serif;
+}
+.wrapper div {
+    flex: 1 0 26%;
+}
+div {
+    padding: 5px;
+}
+p {
+    text-align: center;
+    padding: 10px;
+}
+p#p1, p#p2 {
+    background-color: cornflowerblue;
+    margin-bottom: 5px;
+}
+.wrapper div p:last-child {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: yellow;
+    margin: 0 auto;
+    position: relative;
+}
+.inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+button {
+    flex: 1 0 26%;
+    display: block;
+    padding: 15px;
+    margin: 0 10px;
+    border: 1px solid greenyellow;
+    font-family: 'Clash Grotesk', sans-serif;
+    font-weight: 900;
+    letter-spacing: 2pt;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: greenyellow;
+}
+button:active {
+    color: greenyellow;
+    background-color: white;
+}
+@media screen and (max-width:600px) {
+    .wrapper {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width:400px) {
+    .wrapper div {
+        flex: 1 0 30%;
+    }
+    button {
+        flex: 0 0 45%;
+        order: 1;
+        margin: 25px auto;
+    }
+}
