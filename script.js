@@ -11,7 +11,7 @@ btn.addEventListener("click", function () {
     console.log(tmp1, tmp2);
     if (tmp1 > tmp2) {
       +p1.innerText++;
-    } else {
+    } else if (tmp1 < tmp2) {
       +p2.innerText++;
     }
     if (+p1.innerText == 3) {
